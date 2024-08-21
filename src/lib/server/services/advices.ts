@@ -16,7 +16,7 @@ export const generateRandomAdvice = async (): Promise<string> => {
     const advice = advices[randomIndex];
     return advice;
   } catch {
-    return "Ocurrió un error en al generar el consejo";
+    return "Ocurrió un error en al generar el consejo, intentelo más tarde.";
   }
 };
 
