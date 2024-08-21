@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const advice = advices[randomIndex];
-    return Response.json({ advice });
+    return new Response(advice);
   } catch (e) {
     return new Response("Internal server error", {
       status: 500,
